@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>OTP Verification</title>
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+    <div class="container border rounded-3 p-4" style="max-width: 400px; box-shadow: 0px 0px 20px rgba(0,0,0,0.1);">
+        <h3 class="text-center mb-4">OTP Verification</h3>
+        <form id="otpForm">
+            <div class="form-group mb-3">
+                <label class="form-label">Enter OTP</label>
+                <div class="d-flex justify-content-between">
+                    <input type="text" class="form-control text-center otp-input mx-1" maxlength="1" style="width: 50px;" />
+                    <input type="text" class="form-control text-center otp-input mx-1" maxlength="1" style="width: 50px;" />
+                    <input type="text" class="form-control text-center otp-input mx-1" maxlength="1" style="width: 50px;" />
+                    <input type="text" class="form-control text-center otp-input mx-1" maxlength="1" style="width: 50px;" />
+                </div>
+                <div id="otpError" class="text-danger mt-1" style="font-size: 0.9rem;"></div>
+            </div>
+            <div class="form-group text-center mb-3">
+                <button type="button" id="verifyOtpButton" class="btn btn-success w-100">Verify OTP</button>
+            </div>
+        </form>
+    </div>
+    <script src="jsflie/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
