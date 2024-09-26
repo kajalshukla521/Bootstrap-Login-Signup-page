@@ -39,7 +39,7 @@ function sendOtp() {
       return;
   }
 
-  // Generate and store OTP in localStorage (simulating sending it to user)
+  // Generate and store OTP in localStorage 
   const generatedOtp = generateRandomOtp();
   localStorage.setItem("generatedOtp", generatedOtp);
 
@@ -47,7 +47,7 @@ function sendOtp() {
   alert(`OTP has been sent to ${emailPhoneValue}. (For testing: ${generatedOtp})`);
 
   // Redirect to OTP verification page
-  window.location.href = "otp.html"; // Ensure this path is correct
+  window.location.href = "otp.html"; 
 }
 
 // Function to handle OTP verification
@@ -68,7 +68,7 @@ function verifyOtp() {
       localStorage.removeItem("generatedOtp");
 
       // Redirect to the login page
-      window.location.href = "index.html"; // Change this if your login page is named differently
+      window.location.href = "index.html"; 
   }
 }
 
